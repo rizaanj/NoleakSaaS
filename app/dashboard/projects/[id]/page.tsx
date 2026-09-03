@@ -6,6 +6,8 @@ import RunTestsForm from "./run-tests-form";
 import DeleteProjectButton from "./delete-project-button";
 import ProjectNav from "./project-nav";
 
+export const dynamic = "force-dynamic";
+
 // ── Server action: run tests ───────────────────────────────────────────
 async function runProjectTests(
   prevState: { error: string | null },

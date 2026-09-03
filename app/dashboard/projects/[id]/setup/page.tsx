@@ -3,6 +3,8 @@ import { createClient } from "@/lib/supabase/server";
 import SetupForm from "./setup-form";
 import ProjectNav from "../project-nav";
 
+export const dynamic = "force-dynamic";
+
 // Default permissions_config template for new projects
 const DEFAULT_PERMISSIONS_CONFIG = JSON.stringify(
   {

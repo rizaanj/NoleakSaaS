@@ -33,3 +33,6 @@ next-env.d.ts
 
 # old nested app (moved to root)
 NOleakSAAS/
+
+# old website app (not part of the deployed SaaS)
+website/

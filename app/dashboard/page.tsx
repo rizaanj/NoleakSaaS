@@ -4,6 +4,8 @@ import { createClient } from "@/lib/supabase/server";
 import LogoutButton from "./logout-button";
 import InstructionsButton from "./instructions-button";
 
+export const dynamic = "force-dynamic";
+
 export default async function DashboardPage() {
   const supabase = await createClient();
   const { data } = await supabase.auth.getClaims();

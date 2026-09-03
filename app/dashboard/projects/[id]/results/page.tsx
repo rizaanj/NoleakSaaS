@@ -5,6 +5,8 @@ import { runTests } from "@/lib/testing/run-tests";
 import RunTestsForm from "../run-tests-form";
 import ProjectNav from "../project-nav";
 
+export const dynamic = "force-dynamic";
+
 interface TestResult {
   table: string;
   action: string;
@@ -291,6 +293,16 @@ export default async function ResultsPage({
                     </div>
                   );
                 })}
+              </div>
+
+              {/* Feedback prompt */}
+              <div className="mt-8 rounded-lg border border-gray-200 bg-gray-50 p-4 text-center">
+                <p className="text-sm text-gray-600">
+                  Was this useful? I&apos;m reading everything this week.
+                </p>
+                <p className="mt-1 text-sm font-medium text-gray-900">
+                  rizaanJ007@gmail.com
+                </p>
               </div>
             </>
           )}
